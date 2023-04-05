@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-@ServerEndpoint(value = "/chat")
+@ServerEndpoint(value = "/chatt")
 @Service
 public class WebSocketChatting {
 
