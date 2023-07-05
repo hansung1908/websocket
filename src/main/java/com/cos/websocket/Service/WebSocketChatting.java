@@ -23,9 +23,11 @@ public class WebSocketChatting {
     public void onOpen(Session session) {
         System.out.println(session.toString());
 
+        // clients가 있다면 true
         if(CLIENTS.contains(session)) {
             System.out.println("이미 연결된 세션 : " + session);
         } else {
+            // clients에 세션을 추가
             CLIENTS.add(session);
             System.out.println("새로운 세션 : " + session);
         }
@@ -45,6 +47,7 @@ public class WebSocketChatting {
 
         for(Session client : CLIENTS) {
             System.out.println("입력된 메세지: " + message);
+            // client에 메세지를 전송(반복문이므로 세션에 참가한 사람 한명마다 일일이 전송)
             client.getBasicRemote().sendText(message);
         }
     }
