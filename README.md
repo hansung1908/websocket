@@ -2,8 +2,7 @@
 - websocket을 활용하여 제작한 채팅 서비스
 
 ### java
-- web, websocket, lombok, devtools
-- thymeleaf
+- web, websocket, thymeleaf, lombok, devtools
 
 ### Web Socket이란?
 - 웹 소켓 프로토콜인 RFC 6455는 단일 TCP 연결을 통해 Client와 Server 사이에 전이중 방향 통신(Full Duplex, 2-way Communication) 채널을 설정하는 표준화된 방법을 제공한다.
