@@ -1,7 +1,7 @@
 # websocket
 - websocket을 활용하여 제작한 채팅 서비스
 
-### java
+### java, spring boot
 - web, websocket, thymeleaf, lombok, devtools
 
 ### Web Socket이란?
